@@ -1,0 +1,43 @@
+<html> 
+<head>
+    <title> CHARGEV</title>
+    <link rel="stylesheet" href="fpmaincss.css">
+    <style>
+        
+        
+    </style>
+</head>
+<body> 
+   <div class="nav-links">
+    <a href="entry.php" class="nav-btn">Add Entry</a>
+    <a href="search.php" class="nav-btn">Search Vehicle</a>
+</div>
+
+    <div class="form-container" > 
+        <h2> Payment Details</h2>
+        <form action="insert.php" method="POST"> 
+            <label>
+                Enter name<input type="text"  placeholder="Full Name" >  <br>
+            </label>
+                <label >
+                Vehicle number    <input type="number" placeholder="e.g.Ba1234"> <br> 
+                </label>
+                <label>
+                Phone number   <input type="number" placeholder="Phone Number"><br> 
+                </label>
+                <label>
+                  Total Amount  <input type="number" placeholder="Total Amount"> <br> 
+                </label>
+                <div style="text-align:right; margin-top:10px;">
+                     <button type="submit" class="btn primary">Submit</button>
+                    <button type="reset" class="btn ghost">Reset</button>
+                </div>
+
+            
+        </form>
+          <footer class="credit">Secure payment — CHARGEV</footer>
+    </div>
+    
+</div>
+</body>
+</html>
