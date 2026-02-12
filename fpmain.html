@@ -9,6 +9,7 @@
 </head>
 
 <body>
+     
     <div class="form-container" >
         <div class="nav-links">
             <a href="entry.php" class="nav-btne">Add Entry</a>
@@ -17,16 +18,16 @@
         <h2> Payment Details</h2>
         <form action="insert.php" method="POST"> 
             <label>
-                Enter name<input type="text" name="name" placeholder="Full Name" >  <br>
+                Enter name<input type="text" name="customer_name" placeholder="Full Name" required  >  <br>
             </label>
                 <label >
-                Vehicle number    <input type="number" name="vnumber"  placeholder="e.g.Ba1234"> <br> 
+                Vehicle number    <input type="vehicle_number" name="vnumber"  placeholder="e.g.Ba1234" required> <br> 
                 </label>
                 <label>
-                Phone number   <input type="number"name="pnumber" placeholder="Phone Number"><br> 
+                Phone number   <input type="number"name="phone_number" placeholder="Phone Number" required><br> 
                 </label>
                 <label>
-                  Total Amount  <input type="number" name="total" placeholder="Total Amount"> <br> 
+                  Total Amount  <input type="number" name="amount" placeholder="Total Amount" required> <br> 
                 </label>
                 <div style="text-align:right; margin-top:10px;">
                      <button type="submit" class="btn primary">Submit</button>
