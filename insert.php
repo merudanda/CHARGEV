@@ -1,17 +1,5 @@
 <?php 
-$servername= "localhost";
-$username= "root";
-$password="";
-$database="chargev";
-
-$conn = mysqli_connect($servername , $username , $password , $database);
-
-if(!$conn)
-    {
-        die ("connection failed". mysqli_connect_error() );
-
-    }
-
+require "connection.php";
     $name = $_POST['customer_name'];
     $phone = $_POST['phone_number'];
     $vehicle = $_POST['vehicle_number'];
@@ -23,11 +11,10 @@ if(!$conn)
 
      if (mysqli_query($conn, $sql))
         {
-            header ("location: fpmain.html");
-            exit();
+           echo "New record created successfully";
         }
         else {
-            echo "Error". mysqli_error();
+            echo "Error: ". mysqli_error($conn);
         }
 
         mysqli_close($conn);

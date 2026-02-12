@@ -25,8 +25,9 @@ body {
     padding: 22px;             
     border-radius:20px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    max-width:320px;            
+    max-width:500px;            
     width:100%;
+    overflow-x: auto;
 }
 
 
@@ -136,4 +137,129 @@ label input {
 }
 .nav-btne:hover{
      background-color: #5038d9;
+}
+
+
+
+/*CSS for Search.php*/
+
+table {
+    width: 100%;
+    margin-top: 16px;
+    border-collapse: collapse;
+    font-size: 14px;
+}
+
+table th {
+    background-color: #634af1;
+    color: white;
+    padding: 8px;
+}
+
+table td {
+    padding: 8px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+h4 {
+    margin-top: 12px;
+    color: #14213d;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 16px;
+    table-layout: fixed;   /* important */
+}
+
+table th,
+table td {
+    padding: 8px;
+    word-wrap: break-word;  /* prevents text from stretching table */
+}
+
+
+
+/* monthly report css */
+
+* {
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: linear-gradient(to right, #eef2ff, #f9fafb);
+}
+
+/* Container */
+.report-container {
+    width: 90%;
+    max-width: 900px;
+    margin: 50px auto;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+/* Title */
+.report-container h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #5a4bdb;
+}
+
+/* Filter */
+.report-filter {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+.report-filter input {
+    padding: 8px 12px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+.report-filter button {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 6px;
+    background: #5a4bdb;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.report-filter button:hover {
+    background: #4838c9;
+}
+
+/* Table */
+.report-table table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.report-table th,
+.report-table td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+.report-table th 
+{
+    background: #5a4bdb;
+}
+
+
+/* Summary */
+.report-summary {
+    margin-top: 20px;
+    text-align: right;
+    font-weight: bold;
 }
