@@ -7,26 +7,26 @@
         
     </style>
 </head>
-<body> 
-   <div class="nav-links">
-    <a href="entry.php" class="nav-btn">Add Entry</a>
-    <a href="search.php" class="nav-btn">Search Vehicle</a>
-</div>
 
-    <div class="form-container" > 
+<body>
+    <div class="form-container" >
+        <div class="nav-links">
+            <a href="entry.php" class="nav-btne">Add Entry</a>
+            <a href="search.php" class="nav-btns">Search Vehicle</a>
+        </div><br>
         <h2> Payment Details</h2>
         <form action="insert.php" method="POST"> 
             <label>
-                Enter name<input type="text"  placeholder="Full Name" >  <br>
+                Enter name<input type="text" name="name" placeholder="Full Name" >  <br>
             </label>
                 <label >
-                Vehicle number    <input type="number" placeholder="e.g.Ba1234"> <br> 
+                Vehicle number    <input type="number" name="vnumber"  placeholder="e.g.Ba1234"> <br> 
                 </label>
                 <label>
-                Phone number   <input type="number" placeholder="Phone Number"><br> 
+                Phone number   <input type="number"name="pnumber" placeholder="Phone Number"><br> 
                 </label>
                 <label>
-                  Total Amount  <input type="number" placeholder="Total Amount"> <br> 
+                  Total Amount  <input type="number" name="total" placeholder="Total Amount"> <br> 
                 </label>
                 <div style="text-align:right; margin-top:10px;">
                      <button type="submit" class="btn primary">Submit</button>

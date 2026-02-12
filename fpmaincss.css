@@ -99,21 +99,32 @@ label input {
 
 
 .nav-links {
-    text-align: center;
+    text-align: right;
     margin-bottom: 12px;
 }
 
-.nav-btn {
+.nav-btne ,.nav-btns {
     text-decoration: none;
-    padding: 6px 12px;
+    padding: 7px 6px;
     margin: 0 6px;
     border-radius: 6px;
-    font-size: 13px;
+    font-size: 14px;
     font-weight: 600;
-    color: #634af1;
     border: 1px solid #634af1;
+    background-color: #634af1;
+    color: #ffffff;
+    margin-right: 10px;
 }
 
-.nav-btn:hover {
+.nav-btns{
+     background-color: transparent;
+    border: 1px solid #634af1;
+    color: #634af1;
+}
+
+.nav-btne:hover , .nav-btns:hover {
     background-color: #f0eeff;
+}
+.nav-btne:hover{
+     background-color: #5038d9;
 }
